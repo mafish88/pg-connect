@@ -20,4 +20,4 @@ console.table(results.rows)
 
 
 //close connection
-
+await client.end()
