@@ -14,9 +14,9 @@ connectionString: connectionURI,
 //open connection 
 await client.connect()
 //run query
-const time = await client.query('SELECT NOW()')
+const results = await client.query('SELECT * FROM customers')
 
-console.log(time)
+console.table(results.rows)
 
 
 //close connection
